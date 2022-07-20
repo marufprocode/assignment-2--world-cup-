@@ -35,13 +35,13 @@ a{
    text-align: center;
    transition: 0.5s;
    background-size: 200% auto;
-   box-shadow: 0 0 10px #eee;
    display: block;
    margin-top: 20px;
 }
 
  .watch-btn:hover {
    background-position: right center;
+   box-shadow: 0 0 10px #eee;
  }
 
  #spotlight-container{
@@ -127,6 +127,19 @@ a{
    margin: 0 20px;
    font-weight: bold;
    font-family: 'Poppins', sans-serif;
+   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+   outline: 1px solid;
+   outline-color: rgba(255, 255, 255, .5);
+   outline-offset: 0px;
+   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.menu-btn-group button:hover{
+   border: 1px solid;
+   box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+   outline-color: rgba(255, 255, 255, 0);
+   outline-offset: 15px;
+   text-shadow: 1px 1px 2px #427388;
 }
 
             /* ====aside-menu-end==== */
@@ -245,6 +258,7 @@ a{
 }
 
 #footer-sec p{
+   color: white;  
    text-align: center;
    padding-bottom: 30px;
    margin-top: 40px;
