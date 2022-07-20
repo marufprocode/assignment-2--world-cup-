@@ -36,7 +36,7 @@ img{
  }
 
  #spotlight-container{
-   width: 80%;
+   width: 90%;
    height: 90vh;
    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
    margin: 20px auto;
@@ -62,7 +62,7 @@ img{
    display: block;
    width: fit-content;
    position: relative;
-   font-size: 1.5rem;
+   font-size: 1.2rem;
    line-height: 2rem;
    color: rgb(178, 178, 240);
  }
@@ -71,7 +71,7 @@ img{
    display: block;
    width: fit-content;
    position: relative;
-   font-size: 2rem;
+   font-size: 1.8rem;
    line-height: 2.5rem;
    color: rgb(245, 248, 41);
    text-shadow: 2px 2px 8px #461717;
@@ -79,5 +79,141 @@ img{
 /* ====== Header Section styling end ====== */
 
 /* ======= Main Section Style Starts ======== */
+#main-content{
+   display: flex;
+   width: 90%;
+   margin: 20px auto;
+   border-radius: 15px;
+   justify-content: space-between;
+}
+         /* ====aside-menu-starts==== */
+#menu-sec{
+   width: 20%;
+   border-radius: 15px;
+}
 
-/* ======= Main Section Style Starts ======== */
+.menu-container{
+   width: 100%;
+   height: 250px;
+   border-radius: 15px;
+   position: relative;
+}
+
+.menu-btn-group{
+   position: absolute;
+   width: 100%;
+   height: 250px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   background-color: black;
+   border-radius: 15px;
+}
+
+.menu-btn-group button{
+   padding: 17px 10px;
+   border-radius: 10px;
+   border: none;
+   margin: 0 20px;
+   font-weight: bold;
+   font-family: 'Poppins', sans-serif;
+}
+
+            /* ====aside-menu-end==== */
+
+            /* ====blog-sec-starts==== */
+.blogs-btn{
+   background-color: red;
+}
+
+#blog-sec{
+   width: 79%;
+   border-radius: 15px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   gap: 10px;
+}
+.blog-cards{
+   display: inline-block;
+   flex-direction: column;
+   border-radius: 10px;
+   box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.4);
+   overflow: hidden;
+   background-color: white;
+}
+
+.card-icons{
+   width: 50%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.time-icon, .comment{
+   width: 40px;
+   justify-content: space-between;
+   display: flex;
+   align-items: center;
+   color: gray;
+}
+.card-des{
+   margin: 10px;
+}
+
+.card-des h3, .card-icons {
+   margin: 15px 0;
+}
+
+.blog-btn{
+   padding: 4px;
+}
+
+.btn-viewall{
+   grid-column: 1 / -1;
+   display: flex;
+   justify-content: center;
+   display: none;
+}
+.btn-viewall button{
+   padding: 10px;
+   border: none;
+   background-color: red;
+   color: white;
+   font-weight: bold;
+   border-radius: 5px;
+}
+            /* ====blog-sec-end==== */
+/* ======= Main Section Style End ======== */
+
+#footer-sec{
+   background-color: black;
+   color: white;
+}
+
+.static-footer{
+   color: white;
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer-hr{
+   width: 100%;
+   margin: 0 auto;
+   border: 0;
+   height: 1px;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(226, 216, 216, 0.75), rgba(0, 0, 0, 0)); 
+}
+
+.flex-footer{
+   display: flex;
+   justify-content: space-evenly;
+   margin: 20px 50px;
+}
+
+#footer-sec p{
+   text-align: center;
+   padding-bottom: 30px;
+}
