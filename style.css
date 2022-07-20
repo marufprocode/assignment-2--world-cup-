@@ -17,6 +17,11 @@ img{
 button{
    cursor: pointer;
 }
+
+a{
+   text-decoration: none;
+   color: black;
+}
 /* ====== Common style starts ====== */
 
 /* ====== Header Section styling starts ====== */
@@ -92,8 +97,9 @@ button{
 }
          /* ====aside-menu-starts==== */
 #menu-sec{
-   width: 20%;
+   min-width: 250px;
    border-radius: 15px;
+   margin-right: 10px;
 }
 
 .menu-container{
@@ -243,13 +249,13 @@ button{
    margin-top: 40px;
 }
 
-/* ==============for page2 style================ */
+/* ==============for page2 style start================ */
 .match-cards{
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   padding-top: 10px;
+   padding: 10px;
    padding-bottom: 40px;
    border-radius: 15px;
    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.4);
@@ -258,8 +264,13 @@ button{
    width: 100%;
    display: flex;
    align-items: center;
-   justify-content: space-between;
-   padding: 20px;
+   justify-content: space-evenly;
+   margin-bottom: 20px;
+   /* padding: 20px; */
+}
+
+.flag{
+   max-width: 120px;
 }
 
 #match-sec{
@@ -274,3 +285,51 @@ button{
 .match-btn{
    background-color: red;
 }
+/* ==============for page2 style end================ */
+
+
+         /* ================
+               Media Query
+                     =============== */
+
+/* ---------For Mobile style starts-----------  */
+@media only screen and (max-width: 688px) {
+
+   #spotlight-container{
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+   }
+
+   #header-text{
+      width: 100%;
+      height: 40%;
+      text-align: center;
+      align-items: center;
+      font-size: 1rem;
+   }
+
+   #header-text p{
+      white-space: nowrap; 
+      width: 200px; 
+      overflow: hidden;
+      text-overflow: ellipsis; 
+   }
+
+   #header-image{
+      width: 100%;
+   }
+
+   #main-content{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .menu-btn-group{
+      background-color: white;  
+   }
+
+   .menu-btn-group button{
+   border: 1px solid rgba(128, 128, 128, .5);
+}
+/* ---------For Mobile style ends-----------  */
