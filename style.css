@@ -332,4 +332,30 @@ a{
    .menu-btn-group button{
    border: 1px solid rgba(128, 128, 128, .5);
 }
+#blog-sec {
+   width: 100%;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(9, 1fr);
+}
+
+.flex-footer {
+   flex-direction: column;
+}
+
+#footer-sec p {
+   margin-top: 20px;
+}
+
+.last {
+   margin-top: 40px;
+}
+
 /* ---------For Mobile style ends-----------  */
+
+/* ---------For Tablet style Starts-----------  */
+
+
+
+/* ---------For Tablet style End-----------  */
+
+
